@@ -7,6 +7,81 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+<!--FORMULARIO-->
+        <p>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+        </p>
+
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </p>
+
+        <p>
+            <label for="numer">Numer</label>
+            <input type="tel" name="numer" id="numer">
+        </p>
+<!--MENU DESPLEGABLE-->
+        <p>
+            <label for="dropdown">Which option best describes your current role?</label>
+            <select name="dropdown" id="dropdown">
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="Full-time-job">Full Time Full-time-job</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+            </select>
+
+        </p>
+
+<!--BOTONES DE OPCIÓN-->
+        <p>Would you recommend freeCodeCamp to a friend?
+            <label>
+                <input name="user-recommend" value="definitely" type="radio" class="
+                input-radio">
+            </label>
+            <label>
+                <input name="user-recommend" value="Maybe" type="radio" class="
+                input-radio">
+            </label>
+            <label>
+                <input name="user-recommend" value="Not sure" type="radio" class="
+                input-radio">
+            </label>
+        </p>
+
+<!--CASILLAS DE VERIFICACIÓN-->
+        <p>
+            What would you like to see improved? <span class="minuscula">(Check all that apply)</span>
+        </p>
+        <label>
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+        </label>
+        <label>
+            <input name="prefer" value="Back-end Projects" type="checkbox" class="input-checkbox">
+        </label>
+        <label>
+            <input name="prefer" value="Data Visualization" type="checkbox" class="input-checkbox">
+        </label>
+
+<!--TEXTO-->
+       <div>
+            <label>Any comments or suggestions?</label>
+            <textarea name="textarea" id="textarea cols="10" rows="4"></textarea>
+       </div>
+
+
+<!--BOTÓN-->
+        <p><button type="submit" id="submit">submit</button></p>
+
+
+    </form>
     
 </body>
+<footer>by MarcoMonges</footer>
 </html>
