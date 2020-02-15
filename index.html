@@ -1,87 +1,53 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
-    <link rel="stylesheet" href="style.css">
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <!--ANIMATE CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
+    
+    <div class="content">
 
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <h1 class="logo"><span>FreeCodeCamp</span> Formulario de Encuesta</h1>
 
-    <form id="survey-form">
-<!--FORMULARIO-->
-        <p>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name">
-        </p>
+        <p>Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma.</p>
 
-        <p>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-        </p>
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <form action="">
+                    <p>
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name">
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="name">
+                    </p>
+                    <p>
+                        <label>¿Algún comentario o sugerencia?</label>
+                        <textarea name="message" id="" rows="3"></textarea>
+                    </p>
 
-        <p>
-            <label for="numer">Numer</label>
-            <input type="tel" name="numer" id="numer">
-        </p>
-<!--MENU DESPLEGABLE-->
-        <p>
-            <label for="dropdown">Which option best describes your current role?</label>
-            <select name="dropdown" id="dropdown">
-                <option disabled selected value>Select current role</option>
-                <option value="student">Student</option>
-                <option value="Full-time-job">Full Time Full-time-job</option>
-                <option value="prefer-not-to-say">Prefer not to say</option>
-            </select>
+                    <p>
+                        <button type="submit">Submit</button>
+                    </p>
+                    <p>By MarcoMonges</p>
+                </form>
 
-        </p>
-
-<!--BOTONES DE OPCIÓN-->
-        <p>Would you recommend freeCodeCamp to a friend?
-            <label>
-                <input name="user-recommend" value="definitely" type="radio" class="
-                input-radio">
-            </label>
-            <label>
-                <input name="user-recommend" value="Maybe" type="radio" class="
-                input-radio">
-            </label>
-            <label>
-                <input name="user-recommend" value="Not sure" type="radio" class="
-                input-radio">
-            </label>
-        </p>
-
-<!--CASILLAS DE VERIFICACIÓN-->
-        <p>
-            What would you like to see improved? <span class="minuscula">(Check all that apply)</span>
-        </p>
-        <label>
-            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
-        </label>
-        <label>
-            <input name="prefer" value="Back-end Projects" type="checkbox" class="input-checkbox">
-        </label>
-        <label>
-            <input name="prefer" value="Data Visualization" type="checkbox" class="input-checkbox">
-        </label>
-
-<!--TEXTO-->
-       <div>
-            <label>Any comments or suggestions?</label>
-            <textarea name="textarea" id="textarea cols="10" rows="4"></textarea>
-       </div>
+            </div>
 
 
-<!--BOTÓN-->
-        <p><button type="submit" id="submit">submit</button></p>
+        </div>
 
+    </div>
 
-    </form>
     
 </body>
-<footer>by MarcoMonges</footer>
 </html>
