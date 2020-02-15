@@ -1,73 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
-    <!--GOOGLE FONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-    <!--ANIMATE CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!--CUSTOM CSS-->
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+
+    <h1>FreeCodeCamp Formulario de encuesta</h1>
+
+    <p>Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma.</p>
+
+    <form id="survey-form">
+
+        <!--FORMULARIO TEXTO-->
+        
+        <div>
+            <label for="">Nombre <input type="text" placeholder=" Introduzca su nombre"></label>
+            <label for="">Email <input type="text" placeholder=" Introduzca su Email"></label>
+            <label for="">Edad <input type="text" placeholder=" Introduzca su edad"></label>
+        </div>
     
-    <div class="content">
+        <!--FORMULARIO SELECT-->
 
-        <h1 class="logo"><span>FreeCodeCamp</span> Formulario de Encuesta</h1>
-
-        <h4>Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma.</h4>
-
-        <div class="contact-wrapper">
-            <div class="contact-form">
-                <form action="">
-                    <p>
-                        <label for="name">Nombre</label>
-                        <input type="text" name="name" id="name">
-                    </p>
-                    <p>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="name">
-                    </p>
-
-                    <P>¿Qué opción describe mejor tu rol actual?
-                        <select name="role" id="dropdown">
-                            <option disabled selected value>Seleccionar rol actual</option>
-                            <option value="estudiante">Estudiante</option>
-                            <option value="trabajo">Trabajo Full time</option>
-                            <option value="learner">Estudiante a tiempo completo</option>
-                            <option value="preferNo">Prefiero no decirlo</option>
-                            <option value="other">Otros</option>
-                        </select>
-                    </P>
-
-                    
-
-                    
-                    
-                    
-
-
-                    <!--MENSAJE-->
-                    <p>
-                        <label>¿Algún comentario o sugerencia?</label>
-                        <textarea name="message" id="" rows="3"></textarea>
-                    </p>
-                    <!--BOTÓN-->
-                    <p>
-                        <button type="submit">Submit</button>
-                    </p>
-                    <p>By MarcoMonges</p>
-                </form>
-
-            </div>
-
-
+        <div>
+            <select name="" id="">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+        </div>
+        
+        <!--FORMULARIO RADIO-->
+        <div>
+            <label for=""><input type="radio"></label>
+            <label for=""><input type="radio"></label>
+            <label for=""><input type="radio"></label>
         </div>
 
-    </div>
+        <!--FORMULARIO SELECT 2-->
 
-    
+        <div>
+            <select name="" id="">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+        </div>
+
+        <!--FORMULARIO CHECKBOX-->
+
+        <div>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
+        </div>
+
+        <!--FORMULARIO MENSAJE-->
+
+        <div>
+            <p>¿Algún comentario o sugerencia?</p>
+            <textarea name="" id="" rows="3" placeholder="Ingrese su comentario aquí ..."></textarea>
+        </div>
+
+        <!--SUBMIT-->
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+
+
+    </form>
+
 </body>
 </html>
