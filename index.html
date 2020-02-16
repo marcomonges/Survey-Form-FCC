@@ -1,73 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
-    <!--GOOGLE FONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-    <!--ANIMATE CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!--CUSTOM CSS-->
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+
+    <h1 id="title"><span>FreeCodeCamp</span> Formulario de encuesta</h1>
+
+    <p id="description">Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma.</p>
+
+    <form id="survey-form">
+
+        <!--FORMULARIO TEXTO-->
+        
+        <div>
+            <label id="name-label">Nombre</label> <input type="text" placeholder=" Introduzca su nombre" id="name" required>
+            <label id="email-label">Email</label> <input type="text" placeholder=" Introduzca su Email" id="email" required>
+            <label>Edad</label><input type="text" placeholder=" Introduzca su edad" id="number" min="8" max="99">
+        </div>
     
-    <div class="content">
+        <!--FORMULARIO SELECT-->
 
-        <h1 class="logo"><span>FreeCodeCamp</span> Formulario de Encuesta</h1>
-
-        <h4>Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma.</h4>
-
-        <div class="contact-wrapper">
-            <div class="contact-form">
-                <form action="">
-                    <p>
-                        <label for="name">Nombre</label>
-                        <input type="text" name="name" id="name">
-                    </p>
-                    <p>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="name">
-                    </p>
-
-                    <P>¿Qué opción describe mejor tu rol actual?
-                        <select name="role" id="dropdown">
-                            <option disabled selected value>Seleccionar rol actual</option>
-                            <option value="estudiante">Estudiante</option>
-                            <option value="trabajo">Trabajo Full time</option>
-                            <option value="learner">Estudiante a tiempo completo</option>
-                            <option value="preferNo">Prefiero no decirlo</option>
-                            <option value="other">Otros</option>
-                        </select>
-                    </P>
-
-                    
-
-                    
-                    
-                    
-
-
-                    <!--MENSAJE-->
-                    <p>
-                        <label>¿Algún comentario o sugerencia?</label>
-                        <textarea name="message" id="" rows="3"></textarea>
-                    </p>
-                    <!--BOTÓN-->
-                    <p>
-                        <button type="submit">Submit</button>
-                    </p>
-                    <p>By MarcoMonges</p>
-                </form>
-
-            </div>
-
-
+        <div><p>¿Qué opción describe mejor tu rol actual?</p>
+            <select id="dropdown">
+                <option disabled selected value>Seleccionar Rol Actual</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="trabajo">Trabajo a Tiempo Completo</option>
+                <option value="aprendiz">Aprendiz a Tiempo Completo</option>
+                <option value="prefieroNo">Prefiero No Decirlo</option>
+                <option value="otros">Otros</option>
+            </select>
+        </div>
+        
+        <!--FORMULARIO RADIO-->
+        <div><p>¿Recomendarías freeCodeCamp a un amigo?</p>
+            <label class="radio"><input type="radio" name="recomendacion">Definitivamente</label>
+            <br>
+            <label class="radio"><input type="radio" name="recomendacion">Quizás</label>
+            <br>
+            <label class="radio"><input type="radio" name="recomendacion">No estoy seguro</label>
         </div>
 
-    </div>
+        <!--FORMULARIO SELECT 2-->
 
-    
+        <div><p>¿Cuál es tu característica favorita de freeCodeCamp?</p>
+            <select name="" id="">
+                <option disabled selected value>Seleccionar una opción</option>
+                <option value="desafios">Desafíos</option>
+                <option value="protectos">Proyectos</option>
+                <option value="comunidad">Comunidad</option>
+                <option value="open">Open Source</option>
+            </select>
+        </div>
+
+        <!--FORMULARIO CHECKBOX-->
+
+        <div><p>¿Qué te gustaría ver mejorado? <span>(Marque todo lo que corresponda)</span></p>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Proyectos Front-end</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Proyectos Back-end</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Visualización de Datos</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Desafíos</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Comunidad de Código Abierto</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Salas de Ayuda Gitter</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Videos
+            </label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Meetups de Ciudad</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Wiki</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Foro</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Cursos adicionales</label>
+        </div>
+
+        <!--FORMULARIO MENSAJE-->
+
+        <div>
+            <p>¿Algún comentario o sugerencia?</p>
+            <textarea name="" id="" rows="3" placeholder="Ingrese su comentario aquí ..."></textarea>
+        </div>
+
+        <!--SUBMIT-->
+        <div>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+        <div>
+            <p>by MarcoMonges</p>
+        </div>
+
+
+    </form>
+
 </body>
 </html>
