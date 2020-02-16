@@ -8,67 +8,69 @@
 </head>
 <body>
 
-    <h1>FreeCodeCamp Formulario de encuesta</h1>
+    <h1 id="title"><span>FreeCodeCamp</span> Formulario de encuesta</h1>
 
-    <p>Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma.</p>
+    <p id="description">Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma.</p>
 
     <form id="survey-form">
 
         <!--FORMULARIO TEXTO-->
         
         <div>
-            <label for="">Nombre <input type="text" placeholder=" Introduzca su nombre"></label>
-            <label for="">Email <input type="text" placeholder=" Introduzca su Email"></label>
-            <label for="">Edad <input type="text" placeholder=" Introduzca su edad"></label>
+            <label id="name-label">Nombre</label> <input type="text" placeholder=" Introduzca su nombre" id="name" required>
+            <label id="email-label">Email</label> <input type="text" placeholder=" Introduzca su Email" id="email" required>
+            <label>Edad</label><input type="text" placeholder=" Introduzca su edad" id="number" min="8" max="99">
         </div>
     
         <!--FORMULARIO SELECT-->
 
-        <div>
-            <select name="" id="">
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+        <div><p>¿Qué opción describe mejor tu rol actual?</p>
+            <select id="dropdown">
+                <option disabled selected value>Seleccionar Rol Actual</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="trabajo">Trabajo a Tiempo Completo</option>
+                <option value="aprendiz">Aprendiz a Tiempo Completo</option>
+                <option value="prefieroNo">Prefiero No Decirlo</option>
+                <option value="otros">Otros</option>
             </select>
         </div>
         
         <!--FORMULARIO RADIO-->
-        <div>
-            <label for=""><input type="radio"></label>
-            <label for=""><input type="radio"></label>
-            <label for=""><input type="radio"></label>
+        <div><p>¿Recomendarías freeCodeCamp a un amigo?</p>
+            <label class="radio"><input type="radio" name="recomendacion">Definitivamente</label>
+            <br>
+            <label class="radio"><input type="radio" name="recomendacion">Quizás</label>
+            <br>
+            <label class="radio"><input type="radio" name="recomendacion">No estoy seguro</label>
         </div>
 
         <!--FORMULARIO SELECT 2-->
 
-        <div>
+        <div><p>¿Cuál es tu característica favorita de freeCodeCamp?</p>
             <select name="" id="">
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+                <option disabled selected value>Seleccionar una opción</option>
+                <option value="desafios">Desafíos</option>
+                <option value="protectos">Proyectos</option>
+                <option value="comunidad">Comunidad</option>
+                <option value="open">Open Source</option>
             </select>
         </div>
 
         <!--FORMULARIO CHECKBOX-->
 
-        <div>
-            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
-            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
-            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
-            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
-            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
-            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
-            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
-            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
-            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
-            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
-            <label for="loving"><input id="loving" type="checkbox" name="prefer"> Loving</label>
+        <div><p>¿Qué te gustaría ver mejorado? <span>(Marque todo lo que corresponda)</span></p>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Proyectos Front-end</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Proyectos Back-end</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Visualización de Datos</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Desafíos</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Comunidad de Código Abierto</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Salas de Ayuda Gitter</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Videos
+            </label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Meetups de Ciudad</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Wiki</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Foro</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="prefer">Cursos adicionales</label>
         </div>
 
         <!--FORMULARIO MENSAJE-->
@@ -80,7 +82,10 @@
 
         <!--SUBMIT-->
         <div>
-            <button type="submit">Submit</button>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+        <div>
+            <p>by MarcoMonges</p>
         </div>
 
 
