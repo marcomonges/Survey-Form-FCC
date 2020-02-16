@@ -1,1 +1,59 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    background: #181818;
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 2.5em;
+    text-align: left;
+}
+
+#survey-form {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    background: #222222;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h1 span {
+    color: #B70E21;
+}
+
+#description {
+    text-align: center;
+}
+
+
+#survey-form > * {
+    padding: 1em;
+    margin: 0;
+}
+
+#survey-form div button {
+    background: #B70E21;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    width: 100%;
+}
+
+#name,
+#email,
+#number {
+    width: 100%;
+}
+
+.radio {
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+}
